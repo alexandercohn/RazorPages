@@ -10,42 +10,109 @@
             Hello World!
             <small class="text-muted">And more...</small>
         </h1>
-        
-        <div class="card border-secondary mb-3">
-            <div class="card-header">About this web app</div>
-            <div class="card-body text-secondary">
-                <p class="card-text">This Razor Pages web app was developed by following this <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.2">tutorial</a></p>
-                <p class="card-text">After completing the tutorial, popovers and other bootstrap examples were added.</p>
-            </div>
-        </div>
+
+        <hr class="my-4" />
 
         <div class="card border-primary mb-3">
-            <div class="card-header text-primary">
-                Some Popover Examples
+            <div class="card-header">
+                <h4>About This Web App</h4>
             </div>
-            <div class="card-body text-primary">
-                <p class="card-text">
-                    <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom"
-                            title="Click-triggered Popover"
-                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-                        Click
-                    </button>
-                    <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom"
-                            title="Focus-triggered Popover"
-                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-                        Focus
-                    </button>
-                    <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom"
-                            title="Basic Hover-triggered Popover"
-                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-                        Basic Hover
-                    </button>
-                    <button type="button" class="btn btn-primary btn-sm pop" data-toggle="popover" data-html="true" data-placement="bottom"
-                            title="Advanced Hover-triggered Popover"
-                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-                        Advanced Hover
-                    </button>
-                </p>
+            <div class="card-body text-secondary">
+                <p class="card-text">This Razor Pages web app was developed by following this <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.2">tutorial</a></p>
+                <p class="card-text">After completing the tutorial, the following Bootstrap components were added:</p>
+                <ul class="list-group text-left">
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between bg-light">
+                            <h5 class="mb-1">List Group</h5>
+                            <small>Added: Friday May 3, 2019</small>
+                        </div>
+                        <hr class="my-2" />
+                        <p class="mb-1">This is an example of a list group</p>
+                        <small>*Not sure why the &lt;hr&gt; tag is not showing up in this &lt;li&gt;</small>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between bg-light">
+                            <h5 class="mb-1">Cards</h5>
+                            <small>Added: Friday May 3, 2019</small>
+                        </div>
+                        <hr class="my-2" />
+                        <p class="mb-1">This page contains &lt;div&gt; tags that use the use the card class</p>
+                    </li>
+                    <li class="list-group-item" data-toggle="tooltip" title="This is an example of a tooltip">
+                        <div class="d-flex w-100 justify-content-between bg-light">
+                            <h5 class="mb-1">Tooltips</h5>
+                            <small>Added: Friday May 3, 2019</small>
+                        </div>
+                        <hr class="my-2" />
+                        <p class="mb-1">Mouseover this list item for an example</p>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between bg-light">
+                            <h5 class="mb-1">Carousel</h5>
+                            <small>Added: Friday May 3, 2019</small>
+                        </div>
+                        <hr class="my-2" />
+                        <p class="mb-1">Navigate to the <em>Gallery</em> from the <a asp-page="/Movies/Index">RpMovie</a> Page</p>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between bg-light">
+                            <h5 class="mb-1">Collapse</h5>
+                            <small>Added: Friday May 3, 2019</small>
+                        </div>
+                        <hr class="my-2" />
+                        <p class="mb-1">Example of toggle can be found on this page. Click the <em>Show popover examples</em> button.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between bg-light">
+                            <h5 class="mb-1">Popovers</h5>
+                            <small>Added: Thursday May 2, 2019</small>
+                        </div>
+                        <hr class="my-2" />
+                        <p class="mb-1">
+                            <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Show popover examples
+                            </button>
+                            <br />
+                            More example can be found when hovering over titles in the <a asp-page="/Movies/Index">RpMovie</a> Page
+                            <br />
+                            <small>*Not sure why the <em>Show popopover examples</em> button doesn't toggle off the #collapseExample &lt;div&gt;</small>
+                        </p>
+
+                        <div class="collapse" id="collapseExample">
+                            <hr class="my-3" />
+                            <div class="card border-secondary mb-3 text-center">
+                                <div class="card-header">
+                                    <h4>Some Popover Examples</h4>
+                                </div>
+                                <div class="card-body text-primary">
+                                    <p class="card-text">
+                                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom"
+                                                title="Click-triggered Popover"
+                                                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                                            Click
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom"
+                                                title="Focus-triggered Popover"
+                                                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                                            Focus
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom"
+                                                title="Basic Hover-triggered Popover"
+                                                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                                            Basic Hover
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-sm pop" data-toggle="popover" data-html="true" data-placement="bottom"
+                                                title="Advanced Hover-triggered Popover"
+                                                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                                            Advanced Hover
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
             </div>
         </div>
 

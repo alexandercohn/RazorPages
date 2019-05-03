@@ -91,6 +91,10 @@
             $('[data-toggle="popover"]').popover()
         })
 
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+
         $(".pop").popover({ trigger: "manual", html: true, animation: true })
             .on("mouseenter", function () {
                 var _this = this;
