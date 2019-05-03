@@ -5,33 +5,50 @@
 }
 
     <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <!--<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>-->
 
-        <div>
-            <h3>Some Popover Examples</h3>
+        <h1 class="display-4">
+            Hello World!
+            <small class="text-muted">And more...</small>
+        </h1>
+        
+        <div class="card border-secondary mb-3">
+            <div class="card-header">About this web app</div>
+            <div class="card-body text-secondary">
+                <p class="card-text">This Razor Pages web app was developed by following this <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.2">tutorial</a></p>
+                <p class="card-text">After completing the tutorial, popovers and other bootstrap examples were added.</p>
+            </div>
         </div>
-        <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom"
-                title="Click-triggered Popover"
-                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-            Click
-        </button>
 
-        <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom"
-                title="Focus-triggered Popover"
-                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-            Focus
-        </button>
+        <div class="card border-primary mb-3">
+            <div class="card-header text-primary">
+                Some Popover Examples
+            </div>
+            <div class="card-body text-primary">
+                <p class="card-text">
+                    <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom"
+                            title="Click-triggered Popover"
+                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                        Click
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom"
+                            title="Focus-triggered Popover"
+                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                        Focus
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom"
+                            title="Basic Hover-triggered Popover"
+                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                        Basic Hover
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm pop" data-toggle="popover" data-html="true" data-placement="bottom"
+                            title="Advanced Hover-triggered Popover"
+                            data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
+                        Advanced Hover
+                    </button>
+                </p>
+            </div>
+        </div>
 
-        <button type="button" class="btn btn-secondary btn-sm" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom"
-                title="Basic Hover-triggered Popover"
-                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-            Basic Hover
-        </button>
+        
 
-        <button type="button" class="btn btn-primary btn-sm pop" data-toggle="popover" data-html="true" data-placement="bottom"
-                title="Advanced Hover-triggered Popover"
-                data-content="<p class='text-muted'>This is an example of <strong>static</strong> content.</p><p>Go to <a href='/Movies/Index'>RpMovie</a> page for an example of <strong>dynamic</strong> content in a hover-triggered popover<p>">
-            Advanced Hover
-        </button>
     </div>

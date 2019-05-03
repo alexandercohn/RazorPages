@@ -8,7 +8,8 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Create New</a> |
+    <a asp-page="Gallery">Gallery</a>
 </p>
 
 <form>
@@ -47,7 +48,7 @@
         {
             <tr>
                 <td class="pop" data-trigger="hover" data-placement="left" data-hmtl="true" title="Example of <strong>dynamic</strong> Popover Content" 
-                    data-content="Search google for <a target='_blank' href='https://www.google.com/search?q=@Html.DisplayFor(modelItem => item.Title)'>@Html.DisplayFor(modelItem => item.Title)</a>">
+                    data-content="Search google for <a target='_blank' href='https://www.google.com/search?q=@Html.DisplayFor(modelItem => item.Title)'>@Html.DisplayFor(modelItem => item.Title)</a> <img style='max-height:100px' src='@Html.DisplayFor(modelItem => item.CoverURL)' alt='@Html.DisplayFor(modelItem => item.Title)'> ">
                     <span style="color:dodgerblue">@Html.DisplayFor(modelItem => item.Title)</span>
                 </td>
                 <td>
