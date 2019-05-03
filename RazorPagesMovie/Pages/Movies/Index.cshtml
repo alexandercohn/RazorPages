@@ -46,9 +46,9 @@
         @foreach (var item in Model.Movie)
         {
             <tr>
-                <td class="pop" popover" data-trigger="hover" data-placement="left" data-hmtl="true" title="Example <strong>dynamic</strong> Popover Title" 
+                <td class="pop" data-trigger="hover" data-placement="left" data-hmtl="true" title="Example of <strong>dynamic</strong> Popover Content" 
                     data-content="Search google for <a target='_blank' href='https://www.google.com/search?q=@Html.DisplayFor(modelItem => item.Title)'>@Html.DisplayFor(modelItem => item.Title)</a>">
-                    @Html.DisplayFor(modelItem => item.Title)
+                    <span style="color:dodgerblue">@Html.DisplayFor(modelItem => item.Title)</span>
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.ReleaseDate)
